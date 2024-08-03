@@ -1,7 +1,41 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: blue;
+    padding: 10px 5px;
+}
+
+header {
+    border-bottom: lightcoral 2px solid;
+}
+
+footer {
+    border-top: lightcoral 2px solid;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.container {
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
 .grid {
     display: grid;
-    height: 600px;
-    width: 600px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    justify-content: center;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 }
 
