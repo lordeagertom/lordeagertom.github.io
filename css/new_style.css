@@ -79,6 +79,22 @@ nav {
     text-decoration: none;
 }
 
+/* main stuff */
+
+main {
+    margin: 10px;
+}
+
+main div {
+    border: 1px black solid;
+}
+
+#intro {
+    position: relative;
+}
+
+
+
 /* footer stuff */
 
 footer {
