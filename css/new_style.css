@@ -85,52 +85,71 @@ main {
     margin: 30px 10px;
 }
 
-main div {
-    border: 1px black solid;
+.intro {
+    text-align: justify;
 }
 
-#intro {
+.left {
     margin: 20px;
     box-shadow: inset 20px 20px 0 var(--tertiary-color),
                 20px 20px 0 var(--secondary-color);
     background-color: var(--secondary-color);
 }
 
-#intro h1 {
+.right {
+    margin: 20px;
+    box-shadow: inset -20px 20px 0 var(--tertiary-color),
+                -20px 20px 0 var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.left h1 {
     margin-top: 40px;
     padding-top: 40px;
 }
 
-#intro p {
+.left h2 {
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.right h1 {
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.right h2 {
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.left p {
     margin-left: 40px;
     margin-top: 0px;
     line-height: 1.6;
 }
 
-#intro-img-container {
+.right p {
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+.left-img-container {
     margin-right: 20px;
     margin-bottom: 10px;
     float: left;
     box-shadow: -20px -20px 0 var(--primary-color);
 }
 
-
-.right {
-    margin: 0px 0px 20px 20px;
+.right-img-container {
+    margin-left: 20px;
+    margin-bottom: 10px;
     float: right;
-    clear: left;
-    box-shadow: inset -20px 20px 0 var(--tertiary-color),
-                -20px 20px 0 var(--secondary-color);
-    background-color: var(--secondary-color);
-}
-
-.left {
-    margin: 0px 20px 20px 0px;
-    float: left;
-    clear: right;
-    box-shadow: inset 20px 20px 0 var(--tertiary-color),
-                20px 20px 0 var(--secondary-color);
-    background-color: var(--secondary-color);
+    box-shadow: 20px -20px 0 var(--primary-color);
 }
 
 /* footer stuff */
