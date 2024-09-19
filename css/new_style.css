@@ -1,3 +1,6 @@
+
+/* global stuff */
+
 :root { /* color scheme */
     --primary-color: hsl(35, 90%, 50%);
     --secondary-color: hsl(250, 75%, 30%);
@@ -12,6 +15,8 @@ body {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
 }
+
+/* header stuff */
 
 header {
     position: sticky;
@@ -73,6 +78,8 @@ nav {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+/* footer stuff */
 
 footer {
     display: flex;
