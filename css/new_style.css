@@ -1,4 +1,4 @@
-:root {
+:root { /* color scheme */
     --primary-color: hsl(35, 90%, 50%);
     --secondary-color: hsl(250, 75%, 30%);
     --tertiary-color: hsl(185, 90%, 50%);
@@ -8,9 +8,7 @@
 
 body {
     margin: 0;
-    background-color: var(--secondary-color);
     font-family: Arial, sans-serif;
-    color: var(--primary-color);
 }
 
 header {
@@ -22,7 +20,6 @@ header {
     padding: 10px;
     background-color: var(--secondary-color);
     border-bottom: 4px solid var(--primary-color);
-    box-shadow: 0 2px 1 black;
 }
 
 .img-container {
@@ -66,7 +63,6 @@ nav {
     justify-content: center;
     margin: 10px 0;
     border: 3px solid var(--tertiary-color);
-    box-shadow: 0 0 10px 1px black;
 }
 
 .nav-item a {
@@ -74,3 +70,18 @@ nav {
     text-decoration: none;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-top: 4px solid var(--primary-color);
+}
+
+footer a {
+    color: var(--primary-color);
+}
