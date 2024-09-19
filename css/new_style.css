@@ -29,7 +29,7 @@ header {
     border-bottom: 4px solid var(--primary-color);
 }
 
-.img-container {
+#logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +37,14 @@ header {
     min-width: 360px;
 }
 
-.img-container a {
+#logo a {
     display: flex;
     justify-content: center;
     align-items: center;
     pointer-events: none; /* Makes link inactive */
 }
 
-.img-container a img {
+#logo a img {
     max-width: 50%;
     height: auto;
     pointer-events: auto; /* Brings back the link activity only on image */
