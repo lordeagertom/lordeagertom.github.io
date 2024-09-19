@@ -85,6 +85,10 @@ main {
     margin: 30px 10px;
 }
 
+main div {
+    border: 1px black solid;
+}
+
 #intro {
     margin: 20px;
     box-shadow: inset 20px 20px 0 var(--tertiary-color),
@@ -103,15 +107,30 @@ main {
     line-height: 1.6;
 }
 
-.img-container {
+#intro-img-container {
+    margin-right: 20px;
+    margin-bottom: 10px;
     float: left;
-    margin: 10px 20px;
+    box-shadow: -20px -20px 0 var(--primary-color);
+}
+
+
+.right {
+    margin: 0px 0px 20px 20px;
+    float: right;
+    clear: left;
+    box-shadow: inset -20px 20px 0 var(--tertiary-color),
+                -20px 20px 0 var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .left {
-    box-shadow: -20px -20px 0 var(--primary-color);
-    margin-left: 0 !important;
-    margin-top: 0 !important;
+    margin: 0px 20px 20px 0px;
+    float: left;
+    clear: right;
+    box-shadow: inset 20px 20px 0 var(--tertiary-color),
+                20px 20px 0 var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 /* footer stuff */
