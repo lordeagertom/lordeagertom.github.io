@@ -85,22 +85,32 @@ main {
     margin: 30px 10px;
 }
 
-.intro {
-    text-align: justify;
+h1 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
 }
 
 .left {
-    margin: 20px;
+    margin: 80px 20px;
     box-shadow: inset 20px 20px 0 var(--tertiary-color),
                 20px 20px 0 var(--secondary-color);
     background-color: var(--secondary-color);
 }
 
 .right {
-    margin: 20px;
+    margin: 80px 20px;
     box-shadow: inset -20px 20px 0 var(--tertiary-color),
                 -20px 20px 0 var(--secondary-color);
     background-color: var(--secondary-color);
+}
+
+p.intro {
+    text-align: justify;
+}
+
+#paragraph1 {
+    padding-top: 40px;
 }
 
 .left h1 {
@@ -140,14 +150,14 @@ main {
 
 .left-img-container {
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     float: left;
     box-shadow: -20px -20px 0 var(--primary-color);
 }
 
 .right-img-container {
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     float: right;
     box-shadow: 20px -20px 0 var(--primary-color);
 }
