@@ -1,0 +1,76 @@
+:root {
+    --primary-color: hsl(35, 90%, 50%);
+    --secondary-color: hsl(250, 75%, 30%);
+    --tertiary-color: hsl(185, 90%, 50%);
+    --quaternary-color: hsl(335, 90%, 50%);
+    --quintessential-color: hsl(95, 90%, 50%);
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 0 2px 1 black;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    min-width: 360px;
+}
+
+.img-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Makes link inactive */
+}
+
+.img-container a img {
+    max-width: 50%;
+    height: auto;
+    pointer-events: auto; /* Brings back the link activity only on image */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+}
+
+@media (max-width: 800px) {
+    nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border: 3px solid var(--tertiary-color);
+    box-shadow: 0 0 10px 1px black;
+}
+
+.nav-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
