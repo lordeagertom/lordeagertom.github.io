@@ -82,18 +82,37 @@ nav {
 /* main stuff */
 
 main {
-    margin: 10px;
-}
-
-main div {
-    border: 1px black solid;
+    margin: 30px 10px;
 }
 
 #intro {
-    position: relative;
+    margin: 20px;
+    box-shadow: inset 20px 20px 0 var(--tertiary-color),
+                20px 20px 0 var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
+#intro h1 {
+    margin-top: 40px;
+    padding-top: 40px;
+}
 
+#intro p {
+    margin-left: 40px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+.img-container {
+    float: left;
+    margin: 10px 20px;
+}
+
+.left {
+    box-shadow: -20px -20px 0 var(--primary-color);
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
 
 /* footer stuff */
 
