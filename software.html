@@ -30,57 +30,55 @@
             blah blah blah
         </p></div>
     <div class="gallery">
+        <button class="scroll-btn scroll-left">⟨</button>
         <div class="container">
             <div class="thumbnail">
                 <a href="post1.html">
                     <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    <div class="overlay-text">
+                        <h2>Post Title 1</h2>
+                        <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="post1.html">
                     <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    <div class="overlay-text">
+                        <h2>Post Title 1</h2>
+                        <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="post1.html">
                     <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    <div class="overlay-text">
+                        <h2>Post Title 1</h2>
+                        <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="post1.html">
                     <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    <div class="overlay-text">
+                        <h2>Post Title 1</h2>
+                        <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    </div>
                 </a>
             </div>
             <div class="thumbnail">
                 <a href="post1.html">
                     <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
-                </a>
-            </div>
-            <div class="thumbnail">
-                <a href="post1.html">
-                    <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
-                </a>
-            </div>
-            <div class="thumbnail">
-                <a href="post1.html">
-                    <img src="imgs/square-placeholder.png" alt="Post 1"/>
-                    <h2>Post Title 1</h2>
-                    <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    <div class="overlay-text">
+                        <h2>Post Title 1</h2>
+                        <p class="post-abstract">This is the first sentence of the abstract.</p>
+                    </div>
                 </a>
             </div>
         </div>
+        <button class="scroll-btn scroll-right">⟩</button>
     </div>
 </main>
 <footer>
@@ -93,5 +91,26 @@
         I'm not on social media.
     </p>
 </footer>
+<script>
+    var btnLeft = document.querySelector('.scroll-left');
+    var btnRight = document.querySelector('.scroll-right');
+    var container = document.querySelector('.container');
+
+    btnRight.addEventListener('click', function() {
+    container.scrollBy({
+    top: 0,
+    left: 200, // Change this to the amount you want to scroll
+    behavior: 'smooth'
+    });
+    });
+
+    btnLeft.addEventListener('click', function() {
+    container.scrollBy({
+    top: 0,
+    left: -200, // Change this to the amount you want to scroll
+    behavior: 'smooth'
+    });
+    });
+</script>
 </body>
 </html>

@@ -94,11 +94,115 @@ nav {
 
 /* main stuff */
 
+.sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    z-index: 1;
+}
 
+.sidebar ul li {
+    list-style-type: none;
+    padding: 8px 16px;
+}
+
+.gallery {
+    margin-left: 20%;  /* get the gallery clear of the sidebar */
+    width: 80%;
+    float: left;
+    clear: left;
+}
+
+h1 {
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.container {
+    margin: 20px;
+    height: 25%;
+}
+
+.gallery .container {
+    display: flex; /* aligns thumbnails in a row */
+    overflow-x: auto; /* enables horizontal scrolling */
+    white-space: nowrap; /* prevents thumbnail from wrapping to the next line */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling for touch devices */
+}
+
+.thumbnail {
+    flex: 0 0 33%; /* prevents thumbnails from stretching */
+    margin-right: 10px; /* spacing between thumbnails, adjust as needed */
+    position: relative;
+    width: 25%;  /* adjust as needed */
+    aspect-ratio: 1 / 1;
+}
+
+.thumbnail a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail img,
+.thumbnail .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail .overlay-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;  /* adjust as needed */
+    background-color: rgba(0,0,0,0.5);  /* adjust as needed */
+    text-align: center;
+    padding: 10px;  /* adjust as needed */
+    box-sizing: border-box;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: lightgray;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.scroll-left {
+    margin-left: 20%;
+    z-index: 2;
+    left: 10px;
+}
+
+.scroll-right {
+    z-index: 2;
+    right: 10px;
+}
+
+main {
+    height: 100%;
+}
 
 /* footer stuff */
 
 footer {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
