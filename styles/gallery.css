@@ -1,0 +1,115 @@
+
+/* global stuff */
+
+:root { /* color scheme */
+    --primary-color: hsl(35, 90%, 50%);
+    --secondary-color: hsl(250, 75%, 30%);
+    --tertiary-color: hsl(185, 90%, 50%);
+    --quaternary-color: hsl(335, 90%, 50%);
+    --quintessential-color: hsl(95, 90%, 50%);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+a:link, a:visited {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:link {
+    color: var(--tertiary-color);
+}
+
+a:visited {
+    color: var(--quaternary-color);
+}
+
+/* header stuff */
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    min-width: 360px;
+}
+
+#logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Makes link inactive */
+}
+
+#logo a img {
+    max-width: 50%;
+    height: auto;
+    pointer-events: auto; /* Brings back the link activity only on image */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+}
+
+@media (max-width: 800px) {
+    nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 45px;
+    width: 120px;
+    border: 3px solid var(--tertiary-color);
+}
+
+.nav-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* main stuff */
+
+
+
+/* footer stuff */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-top: 4px solid var(--primary-color);
+}
+
+footer a {
+    color: var(--primary-color);
+}

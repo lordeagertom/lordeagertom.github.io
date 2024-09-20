@@ -16,6 +16,19 @@ body {
     color: var(--primary-color);
 }
 
+a:link, a:visited {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:link {
+    color: var(--tertiary-color);
+}
+
+a:visited {
+    color: var(--quaternary-color);
+}
+
 /* header stuff */
 
 header {
