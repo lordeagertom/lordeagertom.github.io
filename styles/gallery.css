@@ -121,7 +121,7 @@ h1 {
 }
 
 p {
-    margin: 20px;
+    margin: 30px;
 }
 
 .container {
@@ -137,10 +137,9 @@ p {
 }
 
 .thumbnail {
-    flex: 0 0 33%; /* prevents thumbnails from stretching */
-    margin-right: 10px; /* spacing between thumbnails, adjust as needed */
+    flex: 0 0 40%; /* prevents thumbnails from stretching */
+    margin: 10px; /* spacing between thumbnails, adjust as needed */
     position: relative;
-    width: 25%;  /* adjust as needed */
     aspect-ratio: 1 / 1;
 }
 
@@ -164,8 +163,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;  /* adjust as needed */
-    background-color: rgba(0,0,0,0.5);  /* adjust as needed */
+    color: var(--primary-color);  /* adjust as needed */
     text-align: center;
     padding: 10px;  /* adjust as needed */
     box-sizing: border-box;
