@@ -22,11 +22,11 @@ a:link, a:visited {
 }
 
 a:link {
-    color: var(--tertiary-color);
+    color: var(--quaternary-color);
 }
 
 a:visited {
-    color: var(--quaternary-color);
+    color: var(--quintessential-color);
 }
 
 /* header stuff */
